@@ -29,7 +29,6 @@ gallery(galleryItems);
 
 document.querySelector('.gallery').onclick = (event) => {
   event.preventDefault();
-  // basicLightbox.create(`<img src="${event.target.dataset.source}">`).show();
   const bigImage = basicLightbox.create(`<img src="${event.target.dataset.source}">`);
   bigImage.show();
 }
